@@ -6,8 +6,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./images/Screenshot_12.png)
-![](./images/Screenshot_1.png)
+![](./images/screenDesc.jpg)
+![](./images/screenMobile.jpg)
 
 
 ### Links
