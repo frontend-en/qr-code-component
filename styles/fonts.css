@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Outfit";
+  src: local("Outfit"),
+       url("../assets/fonts/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Outfit Bold";
+  src: local("Outfit-Bold"),
+       url("../assets/fonts/Outfit-Bold.ttf") format("truetype");
+  font-weight: 700;
+}

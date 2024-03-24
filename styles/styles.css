@@ -1,83 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Outfit:regular,700');
+@import url('./reset.css');
+@import url('./fonts.css');
 
 :root {
   font-family: 'Outfit', Arial, Helvetica, sans-serif;
-  --blue: #2c7dfa;
-  --blue-shade: #3685ff;
-  --dark-navy: #1f314f;
-  --grey: #7d889e;
+  font-size: 62.5%;
+  --dark-navy: hsl(218, 44%, 22%);
+  --grey: hsl(220, 15%, 55%);
   --light-grey: #d5e1ef;
   --white: #fff;
-  --font-regular: 400;
-  --font-bold: 700;
-  --text-heading: 22px;
-  --text-paragraf: 15px;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100%;
-}
-h1, p {
-  margin: 0;
+  --text-heading: 2.2rem;
+  --text-paragraf: 1.5rem;
+  --font-weight-bold: 700;
+  --line-height: 150%;
 }
 
-.wrapper {
-  background-color: #D5E1EF;
-  min-height: 100%;
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: -1;
+  background-color: var(--light-grey);
 }
+
 .qr-card {
-  position: relative;
-  z-index: 1;
   border-radius: 20px;
-  width: 320px;
+  max-width: 32rem;
   background-color: var(--white);
   box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
-  padding-top: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 16px;
 }
+
 .qr-card__image {
   border-radius: 10px;
-  width: 288px;
-  height: 288px;
-}
-.qr-card__image img {
   width: 100%;
   height: 100%;
 }
 
 .qr-card__content {
-  margin-top: 24px;
-  padding-bottom: 40px;
+  margin-top: 2.4rem;
+  padding-bottom: 2.4rem;
   text-align: center;
   color: var(--dark-navy);
-  width: 268px;
 }
 
 .qr-card__title {
-  font-weight: var(--font-bold);
+  font-family: 'Outfit Bold';
   font-size: var(--text-heading);
+  color: var(--dark-navy);
 }
 
 .qr-card__subtitle {
   margin-top: 16px;
-  font-weight: var(--font-regular);
   font-size: var(--text-paragraf);
-  letter-spacing: 0.01em;
-  color: var(--light-grey);
-}
-
-@media(min-width: 768px) {
-  .qr-card__subtitle {
-    color: var(--grey);
-  }
+  letter-spacing: 0.01rem;
+  color: var(--grey);
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 }
