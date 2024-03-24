@@ -27,7 +27,7 @@ body {
   background-color: var(--white);
   box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
   padding: 16px;
-  margin: 20rem;
+  margin: 0.5rem;
 }
 
 .qr-card__image {
